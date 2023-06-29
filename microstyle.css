@@ -1,0 +1,117 @@
+  <style>
+    .maindiv{
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 20px;
+      background-color: rgba(68, 119, 174, 0.774);
+      text-align: center;   
+      text-decoration: solid;    
+      font-family: 'Times New Roman', Times, serif;
+      box-shadow: 20px 20px 20px red;
+    }
+    div{
+      /* flex box--. row or column one dimentional  */
+      padding: 20px;
+      margin: 20px;
+      /* top left bottom right border */
+      border-radius: 20px 5% ;
+      background-color:#90e0ef;
+      text-align: center;   
+      text-decoration: solid;    
+      font-family: 'Times New Roman', Times, serif;
+      color: rgb(4, 4, 4);
+      }
+      #c{
+        align-self: center;
+        border-radius: 20px 5% ;
+      background-color:#00b4d8;
+      height: auto;
+        width: auto;
+      text-align: center;   
+      text-decoration: solid;    
+      font-family: 'Times New Roman', Times, serif;
+      color: rgb(4, 4, 4);
+      }
+      .heading{
+        background: rgb(217,107,51);
+background: linear-gradient(90deg, rgba(217,107,51,1) 20%, rgba(255,255,255,1) 51%, rgba(0,255,93,1) 100%);}
+.footer {
+        background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: rgb(3, 3, 3);
+  text-align: center;
+}
+.p{
+  align-items: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  justify-content: center;
+  justify-self: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+/* from w3 */
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(6, 5, 5);
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+ /* only for demonstration, should be removed */
+
+
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #90e0ef;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+  </style>
+  

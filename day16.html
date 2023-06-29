@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //function-> a set of instructions will be executed whenever you call the function by its name
+        function a(){
+            for(let b=0;b<=10;b++){
+        document.write(" hello all<br>")
+    }
+    }
+    a()
+    function add(num1,num2)
+    {
+        document.write("the addition of two numbers is",(num1+num2))
+    }
+    add(10,20)
+
+
+    //for loop ->iterartion of loop unless the condition is false
+
+    for(let i=1;i<=10;i++){
+        document.write("<br> the value of i is ",i)
+    }
+    document.write("<br>")
+
+    if(3>5){
+        document.write("3is greater")
+    }
+    else{
+        document.write("b is greater")
+    }
+
+    var username=prompt("enter the username")
+    var password=prompt("enter the password")
+
+    if(username=="admin" && password==123){
+        document.write("<br> you are logged in")
+    }
+    else if(username=="admin" || password==123){
+        document.write("<br> you are logged in 2")
+    }
+    else{
+        document.write("<br> enter thr correct credentials")
+    }
+
+    </script>
+</body>
+</html>

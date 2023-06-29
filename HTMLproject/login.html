@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>Login Page</title>
+<link rel="stylesheet" type="text/css" href="homepage.css">
+</head> 
+<style>
+  #login_form
+{
+    width: 400px;
+    height: 300px;
+    margin-top:50px;
+    margin-left:80px;
+    padding: 20px;
+    border: 2px solid #808080;
+    background-color:#9DB2BF ;
+    border-radius:20px;
+    box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+ }
+h1 
+{
+    text-align: center;
+    margin: 0 0 20px;
+}
+input{
+    margin: 5px 0;
+    padding: 15px;
+    width: 90%;
+    border: 1px solid grey;
+    border-radius:20px;
+}
+#login_button{
+    margin: 20px 0 0 0;
+    padding: 15px 8px;          
+    width: 20%;
+    height:20%;
+    border: 1px solid hsla(0,72%,27%,0);
+    font: bold 1.2em myFirstFont;
+    color: #fff;
+    background-color: #526D82;
+    border-radius:20px;
+    box-shadow: 5px 10px 10px rgba(30,50,40,0.5);
+ }
+input:focus
+{
+	outline:0;
+    box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+} 
+body{
+    background-color:#DDE6ED ;
+}
+
+</style>
+<body>
+    <div align="center">
+<form id="login_form">
+    <h1>Login</h1>
+    <input type="email" placeholder="Email" required="">
+    <input type="password" placeholder="Enter your password" required="">  
+    <div align="center">
+    <input id="login_button" type="submit" value="Login"></input> <br><br>
+    </div>        
+    <a href="forgotpassword.html">Forgot password?</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="signin.html">Create account</a>
+</form>
+</div>
+<script>
+    // get username and password input elements
+const usernameInput = document.getElementById("username");
+const passwordInput = document.getElementById("password");
+// add event listener to login form submit button
+document.getElementById("login-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // prevent form from submitting
+    const username = usernameInput.value;
+    const password = passwordInput.value;
+    // check if username and password are correct
+    if (username === "exampleUser" && password === "examplePassword") {
+        console.log("Login Successful!");
+        // code to direct user to main page
+        // e.g. window.location.href = "main-page.html";
+    } else {
+        console.log("Incorrect username or password. Please try again.");
+    }
+});
+
+</script>
+</body>
+</html>

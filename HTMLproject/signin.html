@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>sign-in Page</title>
+<link rel="stylesheet" type="text/css" href="homepage.css">
+</head> 
+<style>
+  #login_form
+{
+    width: 400px;
+    height: 400px;
+    margin-top:50px;
+    margin-left:80px;
+    padding: 20px;
+    border: 2px solid #808080;
+    background-color:#D2E9E9 ;
+    border-radius:20px;
+    box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+ }
+h1 
+{
+    text-align: center;
+    margin: 0 0 20px;
+}
+input{
+    margin: 5px 0;
+    padding: 15px;
+    width: 90%;
+    border: 1px solid grey;
+    border-radius:20px;
+}
+#login_button{
+    margin: 20px 0 0 0;
+    padding: 15px 8px;          
+    width: 120px;
+    height:50px;
+    border: 1px solid hsla(0,72%,27%,0);
+    font: bold 1.2em myFirstFont;
+    color: #fff;
+    background-color: #9DB2BF;
+    border-radius:20px;
+    box-shadow: 5px 10px 10px rgba(30,50,40,0.5);
+ }
+input:focus
+{
+	outline:0;
+    box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+} 
+body{
+    background-color:#DDE6ED ;
+}
+
+</style>
+<body>
+    <div align="center">
+<form id="login_form">
+    <h1>Sign-in</h1>
+    <input type="text" placeholder="name" required="">
+    <input type="number" placeholder="age" required="">
+    <input type="email" placeholder="Email" required="">
+    <input type="password" placeholder="Enter your password" required="">  
+    <div align="center">
+    <input id="login_button" type="submit" value="send otp"></input> <br><br>
+    </div>        
+    <a href="forgotpassword.html">Forgot password?</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="login.html">LOGIN</a>
+</form>
+</div>
+</body>
+</html>
+ 

@@ -1,0 +1,16 @@
+$backcol:#caf0f8;
+$fontcolor:#03045e;
+$size:15px+30px;
+
+h1{
+    color: $fontcolor;
+    background-color: $backcol;
+    text-align: center;
+    font-size: $size;
+}
+h2{
+    color:$fontcolor;
+    text-align: center;
+    background-color:$backcol;
+    font-size: $size;
+}

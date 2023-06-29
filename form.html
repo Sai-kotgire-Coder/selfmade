@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedback form</title>
+    <link rel="stylesheet" href="boot.css">
+    <style>
+    button{
+        animation-name: anim;
+        animation-duration:3s;
+        animation-iteration-count: 10;
+    }
+    @keyframes anim{
+        from{background-color: green;}to{background-color: orange;}
+    }
+    .b{
+      padding: 10px; 
+      margin: 130px;
+      border-radius: 140px;
+      border-color: blueviolet;
+      border: 12px;
+      border-style:ridge;
+      background-color: #f7ede2;
+      text-decoration: dotted;
+      text-decoration-color: aliceblue;
+      }
+      
+     .a{
+      color:#03045e
+      
+     }
+      
+     body{
+        background-image: url(https://th.bing.com/th?id=OIP.qMXJU2s7BQSAZkhE9qVm3wHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    </style>
+</head>
+<body>
+    <form action="">
+    <div align ="center">
+        <div class="a">
+            <div class="b">
+        <h1><u> web-devlopment</u></h1>
+        <h2>your feedback matters</h2>
+    <!-- simple input from user -->
+    <b>enter the first name </b><input type="text" required><br><br>
+    <b>enter the last name</b><input type="text" required><br><br>
+    <b>enter the phone no.</b><input type="number" required maxlength="999999999" minlength="6666666666">
+    <!-- radio button -->
+    <b><br><br>select the gender</b>
+    <input type="radio" name="gender"><b>Male</b>
+    <input type="radio" name="gender"><b>Female</b>
+    <br><br>
+    <!-- checkbox -->
+    <h2><u>select the city </u></h2>
+    <input type="checkbox">Nanded
+    <input type="checkbox">Pune
+    <input type="checkbox">Mumbai
+    <input type="checkbox">Soalpur
+    <br><br>
+    select date of birth<input type="date">
+    <!-- option or dropdown -->
+    <h2><u> select the course</u></h2>
+    <select>
+        <option>CSE</option>
+        <option>IT</option>
+        <option>ENTC</option>
+        <option>MECH</option>
+    </select><br><br>
+    select the file<input type="file"><br><br>
+    enter email-id<input type="mail"><br><br>
+    password<input type="password"><br><br>
+    <div align="center">
+        <input type="submit">
+    </form>
+         
+    
+
+   
+
+
+
+</div>
+</div>
+</div>
+</body>
+</html>
